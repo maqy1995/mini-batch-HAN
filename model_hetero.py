@@ -40,7 +40,7 @@ class HANLayer(nn.Module):
 
     Arguments
     ---------
-    num_metapath : number of metapath based sub-grpah
+    num_metapath : number of metapath based sub-graph
     in_size : input feature dimension
     out_size : output feature dimension
     layer_num_heads : number of attention heads
