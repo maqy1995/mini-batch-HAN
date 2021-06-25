@@ -18,9 +18,9 @@ Epoch 23 | Val loss 0.5857 | Val Accuracy 0.9177 | Val Micro f1 0.9177 | Val Mac
 Test loss 0.3041 | Test Accuracy 0.9176 | Test Micro f1 0.9176 | Test Macro f1 0.9174
 
 ----------------
-# mini-batch training on ognb-mag:
+# mini-batch training on ogbn-mag:
 ```bash
-python train_sample.py --dataset ognb-mag --num_neighbors 100 --batch_size 1024 --hidden_units 512
+python train_sample.py --dataset ogbn-mag --num_neighbors 100 --batch_size 1024 --hidden_units 512
 ```
 the result is bad (T T):
 >Epoch 43 | loss: 3.4052 | train_acc: 0.2359 | train_micro_f1: 0.2359 | train_macro_f1: 0.0625  

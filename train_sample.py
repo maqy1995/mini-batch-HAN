@@ -94,7 +94,7 @@ def main(args):
         g, features, labels, n_classes, train_nid, val_nid, test_nid, train_mask, \
         val_mask, test_mask = load_data('ACMRaw')
         metapath_list = [['pa', 'ap'], ['pf', 'fp']]
-    elif args['dataset'] == 'ognb-mag':
+    elif args['dataset'] == 'ogbn-mag':
         from dataset import load_dataset
         g, features, labels, n_classes, train_nid, val_nid, test_nid, evaluator = load_dataset('ogbn-mag')
         metapath_list = [['writes_by', 'writes'],
