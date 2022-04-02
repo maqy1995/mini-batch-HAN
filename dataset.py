@@ -85,6 +85,6 @@ if __name__ == '__main__':
     frontier = RW_sampler(5)
     g = g.long()
     pap = dgl.metapath_reachable_graph(g, ['writes_by', 'writes'])  # num_nodes=736389, num_edges=65933339,
-    # paiap = dgl.metapath_reachable_graph(g, ['writes_by', 'affiliated_with', 'affiliated_by', 'writes']) #OOM
+    # paiap = dgl.metapath_reachable_graph(g, ['writes_by', 'affiliated_with', 'affiliated_by', 'writes']) #OOM, edge nums about 21290605428.
     # print(paiap)
     # pfp = dgl.metapath_reachable_graph(g, ['has_topic', 'has_topic_by']) #OOM, it seems to be a fully connected graph.
